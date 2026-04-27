@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 4rem;
+}
+
+.logo {
+  height: 40px;
+}
+
+.theme-toggle {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#theme-toggle {
+  display: none;
+}
+
+.toggle-icon {
+  width: 32px;
+  height: 32px;
+
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rotate-active {
+  transform: rotate(360deg);
+}
+
+@media (max-width: 640px) {
+  header {
+    padding: 0 0 2rem;
+  }
+  .logo {
+    height: 35px;
+  }
+  .toggle-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
